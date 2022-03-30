@@ -5,5 +5,12 @@
 微信
 支付宝
 魅力值
-recharge
 coins
+paypal
+payermax
+stripe
+paytounlock
+paytochat
+recharge
+rechargemoney
+notenoughmoney
