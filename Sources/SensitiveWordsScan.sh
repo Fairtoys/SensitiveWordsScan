@@ -5,16 +5,16 @@ sentstiveWordsFile=${2:-./sensitive_words.txt}
 # ls $dir
 
 if [[ ! -e $sentstiveWordsFile ]]; then
-	echo "${sentstiveWordsFile} not exsit!"
+	echo "[scan] ${sentstiveWordsFile} not exsit!"
 	exit 0
 fi
-
-echo "[scan] start scan dir ${dir}, sentstive words file ${sentstiveWordsFile}"
 
 if [[ ! -d $dir ]]; then
 	echo "[scan] error, ${dir} not a dir"
 	exit 0
 fi
+
+echo "[scan] start scan dir ${dir}, sentstive words file ${sentstiveWordsFile}"
 
 grep -f ${sentstiveWordsFile} -r ${dir}
 
